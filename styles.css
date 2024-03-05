@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    text-decoration: none;
+}
+
+.ContactButton{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* PRIMEIRA SECTIOn  */
+
+.Section1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./imgs/Background.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.Logoheader{
+    width: 52px;
+}
+
+.SectionHeader{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.linkheader{
+    margin-right: 25px;
+    color: white;
+    position: relative;
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+.linkheader:hover{
+    opacity: 2;
+}
+
+.linkheader::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s ease;
+}
+.linkheader:hover:after{
+    width: 100%;
+}
+
+.ButtonHeader{
+    height: 35px;
+    width: 260px;
+    border-radius: 7px;
+    background-color: rgb(245, 202, 86);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.ButtonHeader:hover{
+    background-color: rgb(255, 230, 0);
+}
+
+.section1Center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextCenter{
+    height: 120px;
+    width: 857px;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+.Psection1{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.ButtonSection1{
+    height: 35px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: rgb(245, 202, 86);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.ButtonSection1:hover{
+    background-color: rgb(255, 230, 0);
+}
+
+/* SEGUNDA SECTION */
+
+.Section2{
+    height: 130vh;
+    width: 100vw;
+    padding-top: 150px;
+    background-color: rgb(13, 18, 30);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.DivImages{
+    background-image: url('./imgs/imagesCut.svg');
+    background-size: cover;
+    background-position: center;
+    width: 615px;
+    height: 562px;
+}
+
+.DivTexts{
+    width: 676px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lorem1{
+    color: white;
+    font-size: 35px;
+}
+
+.lorem2{
+    color: white;
+    opacity: 0.6;
+}
+
+.loremHorarios{
+    color: white;
+    font-weight: 500;
+}
+
+/* TERCEIRA SECTION */
+
+.Section3{
+    height: 105vh;
+    width: 100vw;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.ElementsSection3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1Sec3{
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.LoremSec3{
+    width: 656px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.SectionCuts{
+    display: flex;
+    gap: 30px;
+}
+
+.BoxCut{
+    height: 370px;
+    width: 357px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.55) 5px 6px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cutimg{
+    width: 357px;
+}
+
+.divPrices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 50px;
+}
+
+.pCut{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.pPrice{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* QUARTA SECTION */
+
+.Section4{
+    width: 100vw;
+    height: 75vh;
+    background-color: rgb(13, 18, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Sec4Elements{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50px;
+}
+
+.h1Sec4{
+    transform: rotate(-90deg);
+    color: #555555;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 40px;
+    position: relative;
+    left: 280px;
+}
+
+.BoxCutter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.CutterName{
+    position: absolute;
+    bottom: 70px;
+    font-weight: 600;
+    color: #dfb75a;
+}
+
+.ImgCutter{
+    width: 270px;
+}
+
+.BoxIcons{
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social{
+    font-size: 25px;
+    color: white;
+}
+
+/* QUINTA SECTION */
+
+.Section5{
+    height: 140vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sec5Elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.h1Sec5{
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+}
+
+.BoxLocates{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.Locateimg{
+    width: 300px;
+}
+
+.Boxicons2{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.social2{
+    font-size: 30px;
+}
