@@ -27,10 +27,16 @@ body {
 
 .hidden{
     opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-50%);
+    transition: all 1s;
 }
 
 .show{
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
 }
 
 /* */
@@ -205,6 +211,7 @@ header {
     width: 100vw;
     padding-top: 90px;
     padding-bottom: 50px;
+    background-color: white;
 }
 
 .ElementsSection3 {
@@ -343,6 +350,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .Sec5Elements {
