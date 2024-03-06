@@ -20,6 +20,46 @@
         <img src="./imgs/ContactButton.svg" alt="">
     </button>
 
+    <div class="Agendar hiddenbox">
+
+        <div class="divAG">
+
+            <button onclick="CloseBox()" class="AGClose"><i class='bx bx-x'></i></button>
+
+        <h1 class="h1AG">Agendar horário</h1>
+
+        <div class="p&input">
+            <p class="pAG">Nome Completo</p>
+            <input class="inputAG" type="text" placeholder="Digite seu nome">
+        </div>
+        <div class="p&input">
+            <p class="pAG">Selecione a data</p>
+            <input class="inputAG" type="date">
+        </div>
+        <div class="p&input">
+            <p class="pAG">Seleciona uma unidade</p>
+            <select class="inputAG" name="selectAG">
+                <option value="Porto Seguro - CENTRO"></option>
+                <option value="Porto Seguro - CENTRO"></option>
+
+            </select>
+        </div>
+
+        <p class="texthorario">Selecione um horário</p>
+
+        <div class="AGhorarios">
+            <p class="horario">09:00</p>
+            <p class="horario">10:00</p>
+            <p class="horario">11:00</p>
+            <p class="horario">12:00</p>
+        </div>
+
+        <button class="ButtonAg">Agendar horário</button>
+
+    </div>
+
+    </div>
+
     <section class="Section1">
 
         <header>
@@ -37,7 +77,7 @@
                 </nav>
 
             </div>
-            <button class="ButtonHeader">Agendar Horário</button>
+            <button onclick="OpenBox()" class="ButtonHeader">Agendar Horário</button>
         </header>
 
         <section class="section1Center">
@@ -47,7 +87,7 @@
 
             <h4 class="Psection1">Hórario de funcionamento: 09:00 às 18:00</h4>
 
-            <button class="ButtonSection1">Agendar Horário</button>
+            <button onclick="OpenBox()" class="ButtonSection1">Agendar Horário</button>
 
         </section>
 

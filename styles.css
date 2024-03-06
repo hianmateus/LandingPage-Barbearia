@@ -5,12 +5,110 @@
     font-family: "Roboto", sans-serif;
     border: none;
     text-decoration: none;
+    outline: none;
 }
 
 body {
     background-color: rgb(13, 18, 30);
 }
 
+.hiddenbox{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-200%);
+    transition: all 1s;
+}
+.showbox{
+    opacity: 2;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.Agendar{
+    z-index: 2;
+    background-color: rgb(10, 13, 24);
+    padding: 30px 20px;
+    width: 490px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 190px;
+    left: 620px;
+    border-radius: 10px;
+}
+
+.divAG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.AGClose{
+    background: none;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    right: -60px;
+    top: -30px;
+    cursor: pointer;
+}
+
+.h1AG{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.pAG{
+    color: white;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.inputAG{
+    height: 35px;
+    width: 360px;
+    border-radius: 6px;
+    padding-left: 8px;
+    margin-bottom: 30px;
+}
+
+.texthorario{
+    color: white;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.AGhorarios{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.horario {
+    color: white;
+    border: solid 1px white;
+    width: 83px;
+    height: 27px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17 20 30);
+}
+
+.ButtonAg{
+    height: 37px;
+    width: 340px;
+    background-color: rgb(245, 202, 86);
+    border-radius: 10px;
+}
+
+/* */
 
 .ContactButton {
     position: fixed;

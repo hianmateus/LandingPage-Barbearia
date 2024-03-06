@@ -37,5 +37,17 @@ function MoveSection5() {
     Section5.scrollIntoView({ behavior: 'smooth' })
 }
 
+function OpenBox() {
+    const BoxAG = document.querySelector('.Agendar')
+
+    BoxAG.classList.add('showbox')
+}
+
+function CloseBox() {
+    const BoxAG = document.querySelector('.Agendar')
+
+    BoxAG.classList.remove('showbox')
+}
+
 
 
