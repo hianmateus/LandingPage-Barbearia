@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Barber</title>
 </head>
 
@@ -26,37 +26,54 @@
 
             <button onclick="CloseBox()" class="AGClose"><i class='bx bx-x'></i></button>
 
-        <h1 class="h1AG">Agendar horário</h1>
+            <h1 class="h1AG">Agendar horário</h1>
 
-        <div class="p&input">
-            <p class="pAG">Nome Completo</p>
-            <input class="inputAG" type="text" placeholder="Digite seu nome">
+            <div class="p&input">
+                <p class="pAG">Nome Completo</p>
+                <input class="inputAG" id="nome" type="text" placeholder="Digite seu nome">
+            </div>
+            <div class="p&input">
+                <p class="pAG">Selecione a data</p>
+                <input class="inputAG" id="data" type="date">
+            </div>
+            <div class="p&input">
+                <p class="pAG">Seleciona uma unidade</p>
+                <select class="inputAG selectLocate" >
+
+                    <option value="Porto Alegre - CENTRO">Porto Alegre - CENTRO</option>
+                    <option value="Porto Alegre - AGUIAR">Porto Alegre - AGUIAR</option>
+
+                </select>
+            </div>
+
+            <p class="texthorario">Selecione um horário</p>
+
+            <ul class="AGhorarios">
+                <li>
+                    <button class="horario active">9:00</button>
+                </li>
+                <li>
+                    <button class="horario">10:00</button>
+                </li>
+                <li>
+                    <button class="horario">11:00</button>
+                </li>
+                <li>
+                    <button class="horario">12:00</button>
+                </li>
+            </ul>
+
+            <button onclick="Agendar()" class="ButtonAg">Agendar horário</button>
+
         </div>
-        <div class="p&input">
-            <p class="pAG">Selecione a data</p>
-            <input class="inputAG" type="date">
-        </div>
-        <div class="p&input">
-            <p class="pAG">Seleciona uma unidade</p>
-            <select class="inputAG" name="selectAG">
-                <option value="Porto Seguro - CENTRO"></option>
-                <option value="Porto Seguro - CENTRO"></option>
-
-            </select>
-        </div>
-
-        <p class="texthorario">Selecione um horário</p>
-
-        <div class="AGhorarios">
-            <p class="horario">09:00</p>
-            <p class="horario">10:00</p>
-            <p class="horario">11:00</p>
-            <p class="horario">12:00</p>
-        </div>
-
-        <button class="ButtonAg">Agendar horário</button>
 
     </div>
+
+    <div class="AgenderConluido hiddenbox">
+
+        <img class="logoAGconluido" src="./imgs/logo.svg" alt="logo-barber-image">
+        <h1 class="h1AGconcluido">Agendamento realizado com Sucesso</h1>
+        <button onclick="CloseCheck()" class="ButtonAGconcluido">Voltar</button>
 
     </div>
 
@@ -71,8 +88,8 @@
 
                     <button onclick="MoveSection2()" class="linkheader sobre">Sobre</button>
                     <button onclick="MoveSection3()" class="linkheader">Serviços</button>
-                    <button onclick="MoveSection4()" class="linkheader" >Equipe</button>
-                    <button onclick="MoveSection5()" class="linkheader" >Unidades</button>
+                    <button onclick="MoveSection4()" class="linkheader">Equipe</button>
+                    <button onclick="MoveSection5()" class="linkheader">Unidades</button>
 
                 </nav>
 
@@ -157,7 +174,7 @@
     </section>
 
     <section class="Section4 ">
-        
+
         <div class="Sec4Elements">
 
             <h1 class="h1Sec4">Nossa Equipe</h1>
@@ -167,8 +184,8 @@
                 <img class="ImgCutter" src="./imgs/Cutter1.svg" alt="">
 
                 <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a> 
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a> 
+                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
                     <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                 </div>
 
@@ -179,8 +196,8 @@
                 <img class="ImgCutter" src="./imgs/Cutter2.svg" alt="">
 
                 <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a> 
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a> 
+                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
                     <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                 </div>
 
@@ -191,8 +208,8 @@
                 <img class="ImgCutter" src="./imgs/Cutter3.svg" alt="">
 
                 <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a> 
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a> 
+                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
                     <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                 </div>
 
@@ -220,9 +237,9 @@
             </div>
 
             <div class="Boxicons2">
-                <a href=""> <i class='bx bxl-instagram social2'></i> </a> 
-                <a href=""> <i class='bx bxl-twitter social2'></i> </a> 
-                <a href=""> <i class='bx bxl-facebook social2'></i> </a> 
+                <a href=""> <i class='bx bxl-instagram social2'></i> </a>
+                <a href=""> <i class='bx bxl-twitter social2'></i> </a>
+                <a href=""> <i class='bx bxl-facebook social2'></i> </a>
             </div>
 
             <img src="./imgs/logo2.svg" alt="">

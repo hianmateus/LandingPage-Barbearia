@@ -6,26 +6,45 @@
     border: none;
     text-decoration: none;
     outline: none;
+    list-style-type: none;
 }
 
 body {
     background-color: rgb(13, 18, 30);
+    position: relative;
 }
 
-.hiddenbox{
+.hiddenbox {
     opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-200%);
-    transition: all 1s;
-}
-.showbox{
-    opacity: 2;
     filter: blur(0);
+    transform: translateY(-500px);
+    display: none;
+    z-index: -5;
+    transition: 0.4s ease;
+}
+
+.showbox {
+    opacity: 2;
+    display: flex;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: 0.4s ease;
+}
+
+.divhide {
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: 0.7s ease;
+}
+
+.divshow {
+    opacity: 1;
     transform: translateX(0);
 }
 
-.Agendar{
-    z-index: 2;
+/* AGENDAR HORARIO */
+
+.Agendar {
     background-color: rgb(10, 13, 24);
     padding: 30px 20px;
     width: 490px;
@@ -37,16 +56,17 @@ body {
     top: 190px;
     left: 620px;
     border-radius: 10px;
+    z-index: 2;
 }
 
-.divAG{
+.divAG {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.AGClose{
+.AGClose {
     background: none;
     color: white;
     font-size: 60px;
@@ -56,20 +76,20 @@ body {
     cursor: pointer;
 }
 
-.h1AG{
+.h1AG {
     color: white;
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 25px;
 }
 
-.pAG{
+.pAG {
     color: white;
     margin-bottom: 8px;
     font-size: 15px;
 }
 
-.inputAG{
+.inputAG {
     height: 35px;
     width: 360px;
     border-radius: 6px;
@@ -77,13 +97,13 @@ body {
     margin-bottom: 30px;
 }
 
-.texthorario{
+.texthorario {
     color: white;
     font-weight: 200;
     margin-bottom: 8px;
 }
 
-.AGhorarios{
+.AGhorarios {
     display: flex;
     gap: 12px;
     margin-bottom: 35px;
@@ -99,16 +119,66 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(17 20 30);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.horario:hover {
+    background-color: rgb(47, 48, 11);
+    border: solid 1px rgb(255, 241, 113);
+}
+.active {
+    background-color: rgb(47, 48, 11);
+    border: solid 1px rgb(255, 241, 113);
 }
 
-.ButtonAg{
+.ButtonAg {
     height: 37px;
     width: 340px;
     background-color: rgb(245, 202, 86);
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
-/* */
+.ButtonAg:hover {
+    box-shadow: rgba(242, 255, 57, 0.35) 0px 0px 25px;
+}
+
+.AgenderConluido{
+    background-color: rgb(10, 13, 24);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 240px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 12px;
+    z-index: 2;
+}
+
+.h1AGconcluido{
+    color: white;
+    width: 356px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.ButtonAGconcluido{
+    height: 35px;
+    width: 130px;
+    background: rgb(245, 202, 86);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.ButtonAGconcluido:hover{
+    background-color: yellow;
+    box-shadow: rgba(237, 255, 79, 0.35) 0px 0px 25px;
+}
+
+/*BOTAO DO ZAP*/
 
 .ContactButton {
     position: fixed;
@@ -123,14 +193,14 @@ body {
 
 /* Animações */
 
-.hidden{
+.hidden {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-50%);
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
