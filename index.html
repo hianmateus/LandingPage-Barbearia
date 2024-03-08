@@ -20,233 +20,241 @@
         <img src="./imgs/ContactButton.svg" alt="">
     </button>
 
-    <div class="Agendar hiddenbox">
+    <main>
 
-        <div class="divAG">
+        <div class="Agendar hiddenbox">
 
-            <button onclick="CloseBox()" class="AGClose"><i class='bx bx-x'></i></button>
+            <div class="divAG">
 
-            <h1 class="h1AG">Agendar horário</h1>
+                <button onclick="CloseBox()" class="AGClose"><i class='bx bx-x'></i></button>
 
-            <div class="p&input">
-                <p class="pAG">Nome Completo</p>
-                <input class="inputAG" id="nome" type="text" placeholder="Digite seu nome">
+                <h1 class="h1AG">Agendar horário</h1>
+
+                <div class="p&input">
+                    <p class="pAG">Nome Completo</p>
+                    <input class="inputAG" id="nome" type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="p&input">
+                    <p class="pAG">Selecione a data</p>
+                    <input class="inputAG" id="data" type="date">
+                </div>
+                <div class="p&input">
+                    <p class="pAG">Seleciona uma unidade</p>
+                    <select class="inputAG selectLocate">
+
+                        <option value="Porto Alegre - CENTRO">Porto Alegre - CENTRO</option>
+                        <option value="Porto Alegre - AGUIAR">Porto Alegre - AGUIAR</option>
+
+                    </select>
+                </div>
+
+                <p class="texthorario">Selecione um horário</p>
+
+                <ul class="AGhorarios">
+                    <li>
+                        <button class="horario active">9:00</button>
+                    </li>
+                    <li>
+                        <button class="horario">10:00</button>
+                    </li>
+                    <li>
+                        <button class="horario">11:00</button>
+                    </li>
+                    <li>
+                        <button class="horario">12:00</button>
+                    </li>
+                </ul>
+
+                <button onclick="Agendar()" class="ButtonAg">Agendar horário</button>
+
             </div>
-            <div class="p&input">
-                <p class="pAG">Selecione a data</p>
-                <input class="inputAG" id="data" type="date">
-            </div>
-            <div class="p&input">
-                <p class="pAG">Seleciona uma unidade</p>
-                <select class="inputAG selectLocate" >
-
-                    <option value="Porto Alegre - CENTRO">Porto Alegre - CENTRO</option>
-                    <option value="Porto Alegre - AGUIAR">Porto Alegre - AGUIAR</option>
-
-                </select>
-            </div>
-
-            <p class="texthorario">Selecione um horário</p>
-
-            <ul class="AGhorarios">
-                <li>
-                    <button class="horario active">9:00</button>
-                </li>
-                <li>
-                    <button class="horario">10:00</button>
-                </li>
-                <li>
-                    <button class="horario">11:00</button>
-                </li>
-                <li>
-                    <button class="horario">12:00</button>
-                </li>
-            </ul>
-
-            <button onclick="Agendar()" class="ButtonAg">Agendar horário</button>
 
         </div>
 
-    </div>
+        <div class="AgenderConluido hiddenbox">
 
-    <div class="AgenderConluido hiddenbox">
+            <img class="logoAGconluido" src="./imgs/logo.svg" alt="logo-barber-image">
+            <h1 class="h1AGconcluido">Agendamento realizado com Sucesso</h1>
+            <button onclick="CloseCheck()" class="ButtonAGconcluido">Voltar</button>
 
-        <img class="logoAGconluido" src="./imgs/logo.svg" alt="logo-barber-image">
-        <h1 class="h1AGconcluido">Agendamento realizado com Sucesso</h1>
-        <button onclick="CloseCheck()" class="ButtonAGconcluido">Voltar</button>
+        </div>
 
-    </div>
+        <section class="Section1">
 
-    <section class="Section1">
+            <header>
+                <div class="SectionHeader">
 
-        <header>
-            <div class="SectionHeader">
+                    <img class="Logoheader" src="./imgs/logo.svg" alt="">
 
-                <img class="Logoheader" src="./imgs/logo.svg" alt="">
+                    <nav>
 
-                <nav>
+                        <button onclick="MoveSection2()" class="linkheader sobre">Sobre</button>
+                        <button onclick="MoveSection3()" class="linkheader">Serviços</button>
+                        <button onclick="MoveSection4()" class="linkheader">Equipe</button>
+                        <button onclick="MoveSection5()" class="linkheader">Unidades</button>
 
-                    <button onclick="MoveSection2()" class="linkheader sobre">Sobre</button>
-                    <button onclick="MoveSection3()" class="linkheader">Serviços</button>
-                    <button onclick="MoveSection4()" class="linkheader">Equipe</button>
-                    <button onclick="MoveSection5()" class="linkheader">Unidades</button>
+                    </nav>
 
-                </nav>
+                </div>
+                <button onclick="OpenBox()" class="ButtonHeader">Agendar Horário</button>
+            </header>
 
-            </div>
-            <button onclick="OpenBox()" class="ButtonHeader">Agendar Horário</button>
-        </header>
+            <section class="section1Center">
 
-        <section class="section1Center">
+                <h1 class="TextCenter">ESTILO É UM REFLEXO DA SUA ATITUDE E
+                    SUA PERSONALIDADE</h1>
 
-            <h1 class="TextCenter">ESTILO É UM REFLEXO DA SUA ATITUDE E
-                SUA PERSONALIDADE</h1>
+                <h4 class="Psection1">Hórario de funcionamento: 09:00 às 18:00</h4>
 
-            <h4 class="Psection1">Hórario de funcionamento: 09:00 às 18:00</h4>
+                <button onclick="OpenBox()" class="ButtonSection1">Agendar Horário</button>
 
-            <button onclick="OpenBox()" class="ButtonSection1">Agendar Horário</button>
+            </section>
 
         </section>
 
-    </section>
+        <section class="Section2 ">
 
-    <section class="Section2 ">
+            <div class="DivImages hidden">
 
-        <div class="DivImages hidden">
+            </div>
 
-        </div>
+            <div class="DivTexts hidden">
+                <h2 class="lorem1">Sobre</h2>
 
-        <div class="DivTexts hidden">
-            <h2 class="lorem1">Sobre</h2>
+                <p class="lorem2">Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor
+                    nam.
+                    Amet ut
+                    dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.
+                </p>
 
-            <p class="lorem2">Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam.
-                Amet ut
-                dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.</p>
+                <p class="lorem2">Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor
+                    nam.
+                    Amet ut
+                    dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.
+                </p>
 
-            <p class="lorem2">Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam.
-                Amet ut
-                dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.</p>
+                <p class="loremHorarios">Horário de funcionamento 08: as 18:00</p>
 
-            <p class="loremHorarios">Horário de funcionamento 08: as 18:00</p>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="Section3 ">
 
-    <section class="Section3 ">
+            <div class="ElementsSection3">
+                <h1 class="h1Sec3">Serviços</h1>
 
-        <div class="ElementsSection3">
-            <h1 class="h1Sec3">Serviços</h1>
+                <p class="LoremSec3">Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque
+                    mattis iaculis. In
+                    viverra accumsan sagittis tempus duis a. Sagittis mollis a eu urna eget id.</p>
 
-            <p class="LoremSec3">Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque
-                mattis iaculis. In
-                viverra accumsan sagittis tempus duis a. Sagittis mollis a eu urna eget id.</p>
+                <div class="SectionCuts">
+                    <div class="BoxCut hidden">
+                        <img class="Cutimg" src="./imgs/BasicCut.svg" alt="basic-cut-example-image">
 
-            <div class="SectionCuts">
-                <div class="BoxCut hidden">
-                    <img class="Cutimg" src="./imgs/BasicCut.svg" alt="basic-cut-example-image">
+                        <div class="divPrices">
+                            <p class="pCut">Corte de Cabelo</p>
+                            <p class="pPrice">R$ 55,90</p>
+                        </div>
+                    </div>
 
-                    <div class="divPrices">
-                        <p class="pCut">Corte de Cabelo</p>
-                        <p class="pPrice">R$ 55,90</p>
+                    <div class="BoxCut hidden">
+                        <img class="Cutimg" src="./imgs/MediumCut.svg" alt="Complet-cut-example-image">
+
+                        <div class="divPrices">
+                            <p class="pCut">Corte Completo</p>
+                            <p class="pPrice">R$ 55,90</p>
+                        </div>
+                    </div>
+
+                    <div class="BoxCut hidden">
+                        <img class="Cutimg" src="./imgs/CompleteCut.svg" alt="hair&beard-cut-example-image">
+
+                        <div class="divPrices">
+                            <p class="pCut">Corte & Barba</p>
+                            <p class="pPrice">R$ 55,90</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="BoxCut hidden">
-                    <img class="Cutimg" src="./imgs/MediumCut.svg" alt="Complet-cut-example-image">
+        </section>
 
-                    <div class="divPrices">
-                        <p class="pCut">Corte Completo</p>
-                        <p class="pPrice">R$ 55,90</p>
+        <section class="Section4 ">
+
+            <div class="Sec4Elements">
+
+                <h1 class="h1Sec4">Nossa Equipe</h1>
+
+                <div class="BoxCutter hidden">
+                    <p class="CutterName">Lucas Silva</p>
+                    <img class="ImgCutter" src="./imgs/Cutter1.svg" alt="">
+
+                    <div class="BoxIcons">
+                        <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                     </div>
+
                 </div>
 
-                <div class="BoxCut hidden">
-                    <img class="Cutimg" src="./imgs/CompleteCut.svg" alt="hair&beard-cut-example-image">
+                <div class="BoxCutter hidden">
+                    <p class="CutterName">Henrique Souza</p>
+                    <img class="ImgCutter" src="./imgs/Cutter2.svg" alt="">
 
-                    <div class="divPrices">
-                        <p class="pCut">Corte & Barba</p>
-                        <p class="pPrice">R$ 55,90</p>
+                    <div class="BoxIcons">
+                        <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                     </div>
+
                 </div>
-            </div>
-        </div>
 
-    </section>
+                <div class="BoxCutter hidden">
+                    <p class="CutterName">Tiago Mendes</p>
+                    <img class="ImgCutter" src="./imgs/Cutter3.svg" alt="">
 
-    <section class="Section4 ">
+                    <div class="BoxIcons">
+                        <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
+                        <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
+                    </div>
 
-        <div class="Sec4Elements">
-
-            <h1 class="h1Sec4">Nossa Equipe</h1>
-
-            <div class="BoxCutter hidden">
-                <p class="CutterName">Lucas Silva</p>
-                <img class="ImgCutter" src="./imgs/Cutter1.svg" alt="">
-
-                <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
                 </div>
 
             </div>
+        </section>
 
-            <div class="BoxCutter hidden">
-                <p class="CutterName">Henrique Souza</p>
-                <img class="ImgCutter" src="./imgs/Cutter2.svg" alt="">
+        <section class="Section5 ">
 
-                <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
+            <div class="Sec5Elements">
+
+                <h1 class="h1Sec5">NOSSAS UNIDADES</h1>
+
+                <div class="BoxLocates">
+
+                    <div class="hidden">
+                        <img class="Locateimg" src="./imgs/Locate1.svg" alt="">
+                    </div>
+
+                    <div class="hidden">
+                        <img class="Locateimg" src="./imgs/Locate2.svg" alt="">
+                    </div>
+
                 </div>
+
+                <div class="Boxicons2">
+                    <a href=""> <i class='bx bxl-instagram social2'></i> </a>
+                    <a href=""> <i class='bx bxl-twitter social2'></i> </a>
+                    <a href=""> <i class='bx bxl-facebook social2'></i> </a>
+                </div>
+
+                <img src="./imgs/logo2.svg" alt="">
 
             </div>
 
-            <div class="BoxCutter hidden">
-                <p class="CutterName">Tiago Mendes</p>
-                <img class="ImgCutter" src="./imgs/Cutter3.svg" alt="">
+        </section>
 
-                <div class="BoxIcons">
-                    <a href=""> <img class="social" src="./imgs/icons/twitter.svg" alt="icon-twitter"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/instagram.svg" alt="icon-instagram"> </a>
-                    <a href=""> <img class="social" src="./imgs/icons/facebook.svg" alt="icon-facebook"> </a>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="Section5 ">
-
-        <div class="Sec5Elements">
-
-            <h1 class="h1Sec5">NOSSAS UNIDADES</h1>
-
-            <div class="BoxLocates">
-
-                <div class="hidden">
-                    <img class="Locateimg" src="./imgs/Locate1.svg" alt="">
-                </div>
-
-                <div class="hidden">
-                    <img class="Locateimg" src="./imgs/Locate2.svg" alt="">
-                </div>
-
-            </div>
-
-            <div class="Boxicons2">
-                <a href=""> <i class='bx bxl-instagram social2'></i> </a>
-                <a href=""> <i class='bx bxl-twitter social2'></i> </a>
-                <a href=""> <i class='bx bxl-facebook social2'></i> </a>
-            </div>
-
-            <img src="./imgs/logo2.svg" alt="">
-
-        </div>
-
-    </section>
+    </main>
 
 </body>
 
