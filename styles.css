@@ -157,8 +157,8 @@ body {
     justify-content: center;
     flex-direction: column;
     position: fixed;
-    top: 240px;
-    left: 650px;
+    top: 35%;
+    left: 38%;
     padding: 30px;
     border-radius: 15px;
     gap: 12px;
